@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface GalleryItem {
   id: string;
@@ -10,20 +11,20 @@ interface GalleryItem {
 }
 
 const GALLERY_DATA: GalleryItem[] = [
-  { id: '1',  image: '/act2.jpeg',  category: 'Activities', caption: 'Lions Club activity — act2.'  },
-  { id: '2',  image: '/act3.jpeg',  category: 'Activities', caption: 'Lions Club activity — act3.'  },
-  { id: '3',  image: '/act4.jpeg',  category: 'Activities', caption: 'Lions Club activity — act4.'  },
-  { id: '4',  image: '/act5.jpeg',  category: 'Activities', caption: 'Lions Club activity — act5.'  },
-  { id: '5',  image: '/act6.jpeg',  category: 'Activities', caption: 'Lions Club activity — act6.'  },
-  { id: '6',  image: '/act7.jpeg',  category: 'Activities', caption: 'Lions Club activity — act7.'  },
-  { id: '7',  image: '/act8.jpeg',  category: 'Activities', caption: 'Lions Club activity — act8.'  },
-  { id: '8',  image: '/act9.jpeg',  category: 'Activities', caption: 'Lions Club activity — act9.'  },
-  { id: '9',  image: '/act10.jpeg', category: 'Activities', caption: 'Lions Club activity — act10.' },
-  { id: '10', image: '/act11.jpeg', category: 'Activities', caption: 'Lions Club activity — act11.' },
-  { id: '11', image: '/act12.jpeg', category: 'Activities', caption: 'Lions Club activity — act12.' },
-  { id: '12', image: '/act13.jpeg', category: 'Activities', caption: 'Lions Club activity — act13.' },
-  { id: '13', image: '/act14.jpeg', category: 'Activities', caption: 'Lions Club activity — act14.' },
-  { id: '14', image: '/act15.jpeg', category: 'Activities', caption: 'Lions Club activity — act15.' },
+  { id: '1',  image: '/images/act2.jpeg',  category: 'Activities', caption: 'Lions Club activity — act2.'  },
+  { id: '2',  image: '/images/act3.jpeg',  category: 'Activities', caption: 'Lions Club activity — act3.'  },
+  { id: '3',  image: '/images/act4.jpeg',  category: 'Activities', caption: 'Lions Club activity — act4.'  },
+  { id: '4',  image: '/images/act5.jpeg',  category: 'Activities', caption: 'Lions Club activity — act5.'  },
+  { id: '5',  image: '/images/act6.jpeg',  category: 'Activities', caption: 'Lions Club activity — act6.'  },
+  { id: '6',  image: '/images/act7.jpeg',  category: 'Activities', caption: 'Lions Club activity — act7.'  },
+  { id: '7',  image: '/images/act8.jpeg',  category: 'Activities', caption: 'Lions Club activity — act8.'  },
+  { id: '8',  image: '/images/act9.jpeg',  category: 'Activities', caption: 'Lions Club activity — act9.'  },
+  { id: '9',  image: '/images/act10.jpeg', category: 'Activities', caption: 'Lions Club activity — act10.' },
+  { id: '10', image: '/images/act11.jpeg', category: 'Activities', caption: 'Lions Club activity — act11.' },
+  { id: '11', image: '/images/act12.jpeg', category: 'Activities', caption: 'Lions Club activity — act12.' },
+  { id: '12', image: '/images/act13.jpeg', category: 'Activities', caption: 'Lions Club activity — act13.' },
+  { id: '13', image: '/images/act14.jpeg', category: 'Activities', caption: 'Lions Club activity — act14.' },
+  { id: '14', image: '/images/act15.jpeg', category: 'Activities', caption: 'Lions Club activity — act15.' },
 ];
 
 const CATEGORIES = ['All', 'Activities'];
@@ -122,7 +123,7 @@ export default function Gallery() {
               >
                 {/* Image */}
                 <img
-                  src={item.image}
+                  src={getAssetUrl(item.image)}
                   alt={item.caption}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -185,7 +186,7 @@ export default function Gallery() {
                   className="w-full h-full flex items-center justify-center p-2"
                 >
                   <img
-                    src={filteredItems[lightboxIndex].image}
+                    src={getAssetUrl(filteredItems[lightboxIndex].image)}
                     alt={filteredItems[lightboxIndex].caption}
                     className="max-w-full max-h-full object-contain rounded-xl select-none"
                   />

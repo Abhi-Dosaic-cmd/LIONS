@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Filter, X, Eye } from 'lucide-react';
 import activitiesData from '../data/activities.json';
+import { getAssetUrl } from '../utils/assets';
 
 interface Activity {
   id: string;
@@ -145,7 +146,7 @@ export default function Activities() {
                 {/* Cover Image */}
                 <div className="relative group/img aspect-[16/10] overflow-hidden">
                   <img
-                    src={act.image}
+                    src={getAssetUrl(act.image)}
                     alt={act.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105"
                     loading="lazy"
@@ -226,7 +227,7 @@ export default function Activities() {
                 {/* Cover Image in modal */}
                 <div className="relative aspect-[16/9] w-full">
                   <img
-                    src={activeModal.image}
+                    src={getAssetUrl(activeModal.image)}
                     alt={activeModal.title}
                     className="w-full h-full object-cover"
                   />

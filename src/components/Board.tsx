@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Phone } from 'lucide-react';
 import boardData from '../data/board.json';
+import { getAssetUrl } from '../utils/assets';
 
 interface Member {
   id: string;
@@ -57,7 +58,7 @@ export default function Board() {
                 {/* Circular image */}
                 <div className="relative w-28 h-28 rounded-full p-1.5 bg-gradient-to-br from-lions-blue to-lions-gold/60 shadow-lg mb-4 group-hover:scale-105 transition-transform duration-300">
                   <img
-                    src={member.image}
+                    src={getAssetUrl(member.image)}
                     alt={member.name}
                     className="w-full h-full object-cover rounded-full bg-slate-200"
                     loading="lazy"

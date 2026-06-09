@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Footer() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -21,7 +22,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-lions-gold shadow-md overflow-hidden bg-white">
-                <img src="/LOGO.png" alt="Lions Club Logo" className="w-full h-full object-contain" />
+                <img src={getAssetUrl('/images/LOGO.png')} alt="Lions Club Logo" className="w-full h-full object-contain" />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-sm sm:text-base text-white leading-tight tracking-wide">

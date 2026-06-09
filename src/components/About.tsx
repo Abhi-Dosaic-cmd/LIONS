@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface NewsCard {
   id: string;
@@ -12,7 +13,7 @@ interface NewsCard {
 const NEWS_CARDS: NewsCard[] = [
   {
     id: '1',
-    image: '/n1.jpeg',
+    image: '/images/n1.jpeg',
     badge: 'Kerala Kaumudi • Mar 2026',
     title: 'Palliative Care Patient-Family Meet at LEAD College',
     description:
@@ -20,7 +21,7 @@ const NEWS_CARDS: NewsCard[] = [
   },
   {
     id: '2',
-    image: '/n2.jpeg',
+    image: '/images/n2.jpeg',
     badge: 'Deepika • 08 Mar 2026',
     title: "Students Take Over Housekeeping Roles on Women's Day",
     description:
@@ -28,7 +29,7 @@ const NEWS_CARDS: NewsCard[] = [
   },
   {
     id: '3',
-    image: '/n3.jpeg',
+    image: '/images/n3.jpeg',
     badge: 'Veekshanam • 08 Mar 2026',
     title: "LEAD College Students Set an Example on Women's Day",
     description:
@@ -102,7 +103,7 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/act6.jpeg"
+                src={getAssetUrl('/images/act6.jpeg')}
                 alt="Lions Club activity"
                 className="w-full object-cover aspect-[4/3] rounded-2xl hover:scale-105 transition-transform duration-500"
                 loading="lazy"
@@ -162,7 +163,7 @@ export default function About() {
                 {/* Card image */}
                 <div className="relative overflow-hidden aspect-[16/10]">
                   <img
-                    src={card.image}
+                    src={getAssetUrl(card.image)}
                     alt={card.title}
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

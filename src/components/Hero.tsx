@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Hero() {
   const handleScrollTo = (id: string) => {
@@ -22,7 +23,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-10000 ease-linear scale-105"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 40, 85, 0.82), rgba(8, 15, 30, 0.95)), url('/home.jpeg')`,
+          backgroundImage: `linear-gradient(rgba(0, 40, 85, 0.82), rgba(8, 15, 30, 0.95)), url('${getAssetUrl('/images/home.jpeg')}')`,
         }}
       />
 

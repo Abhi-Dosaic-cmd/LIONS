@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Scissors, Sparkles } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 // ── Config ─────────────────────────────────────────────────────────────────
 export const LAUNCHED_KEY = 'lionsWebsiteLaunched';
@@ -201,7 +202,7 @@ export default function InaugurationScreen({ onComplete }: { onComplete: () => v
                     '0 0 0 4px rgba(255,215,0,0.5), 0 0 70px rgba(255,215,0,0.4), 0 20px 60px rgba(0,0,0,0.6)',
                 }}
               >
-                <img src="/LOGO.png" alt="Lions Club" className="w-full h-full object-contain" />
+                <img src={getAssetUrl('/images/LOGO.png')} alt="Lions Club" className="w-full h-full object-contain" />
               </div>
             </motion.div>
 

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import FloatingActions from './components/FloatingActions';
 import InaugurationScreen, { LAUNCHED_KEY, FORCE_SHOW } from './components/InaugurationScreen';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getAssetUrl } from './utils/assets';
 
 // ── Phase order: inauguration? → loading → main ────────────────────────────
 type Phase = 'inauguration' | 'loading' | 'main';
@@ -53,7 +54,7 @@ export default function App() {
               <div className="absolute inset-0 rounded-full border-4 border-slate-700/50" />
               <div className="absolute inset-0 rounded-full border-4 border-t-lions-gold border-r-transparent border-b-transparent border-l-transparent animate-spin" />
               <div className="absolute inset-1.5 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                <img src="/LOGO.png" alt="Lions Club Logo" className="w-full h-full object-contain p-1" />
+                <img src={getAssetUrl('/images/LOGO.png')} alt="Lions Club Logo" className="w-full h-full object-contain p-1" />
               </div>
             </div>
             <motion.h2

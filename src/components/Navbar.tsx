@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getAssetUrl } from '../utils/assets';
 
 const NAV_ITEMS = [
   { label: 'Home', href: '#home' },
@@ -84,7 +85,7 @@ export default function Navbar() {
           >
             {/* Logo Badge */}
             <div className="relative flex items-center justify-center w-10 h-10 rounded-full border border-lions-gold shadow-md overflow-hidden bg-white">
-              <img src="/LOGO.png" alt="Lions Club Logo" className="w-full h-full object-contain" />
+              <img src={getAssetUrl('/images/LOGO.png')} alt="Lions Club Logo" className="w-full h-full object-contain" />
               <div className="absolute inset-0 rounded-full border border-lions-gold/30 group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="flex flex-col">

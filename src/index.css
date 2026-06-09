@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-lions-blue: #003F87;
+  --color-lions-blue-light: #0a5bbd;
+  --color-lions-blue-dark: #002855;
+  --color-lions-blue-darker: #001938;
+  --color-lions-gold: #FDB913;
+  --color-lions-gold-light: #fecb52;
+  --color-lions-gold-dark: #c99102;
+  --color-lions-gold-darker: #9c7001;
+  --color-lions-navy-light: #1C2541;
+  --color-lions-navy-dark: #0B132B;
+  --color-lions-navy-bg: #080F1E;
+  
+  --font-sans: 'Outfit', 'Inter', sans-serif;
+
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+  --animate-pulse-subtle: pulseSubtle 2.5s infinite ease-in-out;
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulseSubtle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+}
+
+@utility glass-nav {
+  @apply bg-white/70 dark:bg-lions-navy-bg/75 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50;
+}
+
+@utility glass-card {
+  @apply bg-white/80 dark:bg-lions-navy-dark/60 backdrop-blur-md border border-slate-200/40 dark:border-slate-800/40 shadow-xl shadow-slate-100/40 dark:shadow-none;
+}
+
+@utility glass-card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-lions-blue/10 dark:hover:shadow-lions-gold/5 hover:border-lions-blue/30 dark:hover:border-lions-gold/30;
+}
+
+@utility text-gradient-primary {
+  @apply bg-gradient-to-r from-lions-blue via-lions-blue-light to-lions-gold bg-clip-text text-transparent dark:from-white dark:to-lions-gold;
+}
+
+@utility text-gradient-gold {
+  @apply bg-gradient-to-r from-lions-gold to-amber-500 bg-clip-text text-transparent;
+}
+
+@utility btn-primary {
+  @apply relative overflow-hidden px-6 py-3 rounded-full font-semibold bg-lions-blue text-white hover:bg-lions-blue-light shadow-lg shadow-lions-blue/20 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-lions-blue/50;
+}
+
+@utility btn-secondary {
+  @apply px-6 py-3 rounded-full font-semibold border-2 border-lions-blue text-lions-blue dark:border-lions-gold dark:text-lions-gold hover:bg-lions-blue/10 dark:hover:bg-lions-gold/10 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-lions-blue/30 dark:focus:ring-lions-gold/30;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply transition-colors duration-300 bg-slate-50 text-slate-800 dark:bg-lions-navy-bg dark:text-slate-100 antialiased overflow-x-hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-lions-navy-dark;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-lions-blue/30 dark:bg-lions-gold/20 rounded-full hover:bg-lions-blue/60 dark:hover:bg-lions-gold/50 transition-colors;
+  }
+
+  /* Text Selection */
+  ::selection {
+    @apply bg-lions-gold/30 text-lions-blue-dark dark:text-lions-gold dark:bg-lions-blue/50;
+  }
+}
+
+/* Custom Hide Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

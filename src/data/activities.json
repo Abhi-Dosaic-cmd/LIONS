@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Mega Blood Donation Camp",
+    "date": "2026-05-12",
+    "category": "Service",
+    "year": "2026",
+    "description": "Organized in collaboration with the District Blood Bank, securing over 120 units of blood to support local emergency units.",
+    "image": "https://images.unsplash.com/photo-1615461066841-60a63788b201?q=80&w=800&auto=format&fit=crop",
+    "details": "Our annual Mega Blood Donation Camp saw an overwhelming response from the students of LEAD College Autonomous and local residents of Dhoni. A team of 15 medical professionals facilitated the event in the college auditorium. Every donor underwent a screening process, and refreshments were served post-donation. The camp successfully collected 128 units, directly contributing to saving lives in nearby government and private hospitals."
+  },
+  {
+    "id": "2",
+    "title": "Green Dhoni: Tree Plantation Drive",
+    "date": "2026-04-22",
+    "category": "Community Outreach",
+    "year": "2026",
+    "description": "Planted 250 native saplings along the Dhoni hillsides to combat soil erosion and promote biodiversity.",
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop",
+    "details": "To commemorate Earth Day, 50 active Lion members and student volunteers gathered at the foothills of Dhoni. We selected native tree species such as Neem, Jackfruit, and Teak to ensure high survival rates and support local biodiversity. Each sapling was mapped and assigned to a specific group for weekly monitoring and watering, creating a sustainable environmental model for the region."
+  },
+  {
+    "id": "3",
+    "title": "Lead Youth Leadership Workshop",
+    "date": "2026-03-15",
+    "category": "Leadership",
+    "year": "2026",
+    "description": "A three-day residential youth empowerment program focusing on public speaking, conflict resolution, and project management.",
+    "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=800&auto=format&fit=crop",
+    "details": "Led by certified international trainers from the Lions International network, this workshop brought together 80 student leaders across departments. The curriculum featured interactive simulation games, mock debates, stress management techniques, and hands-on social project planning. Participants designed 6 community service blueprints, two of which have been selected for execution by the club later this term."
+  },
+  {
+    "id": "4",
+    "title": "Digital Literacy & Educational Support",
+    "date": "2025-11-10",
+    "category": "Events",
+    "year": "2025",
+    "description": "Donating computer systems and organizing basic digital literacy camps for children in Dhoni primary schools.",
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+    "details": "Recognizing the digital divide in rural areas, the Lions Club of LEAD College donated 5 refurbished desktop computers to the Dhoni Government Primary School. Alongside the hardware, our members conducted a week-long digital literacy camp, teaching children basic operations, paint programs, and internet safety. The initiative aimed to make learning more interactive and accessible for rural kids."
+  },
+  {
+    "id": "5",
+    "title": "Free Rural Healthcare Camp",
+    "date": "2025-09-05",
+    "category": "Service",
+    "year": "2025",
+    "description": "Provided free general checkups, eye screenings, and pediatric consultations to over 300 villagers in rural Dhoni.",
+    "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800&auto=format&fit=crop",
+    "details": "Partnering with leading multi-speciality medical teams, the club established a comprehensive temporary healthcare unit in the village center. Over 300 residents received free medical checks, including blood sugar profiling, blood pressure screening, and ECG tests. The event also featured a specialized eye examination desk, where 80+ senior citizens were prescribed glasses, funded and distributed entirely by the club."
+  },
+  {
+    "id": "6",
+    "title": "Annual Charter Day Celebration",
+    "date": "2025-08-18",
+    "category": "Celebrations",
+    "year": "2025",
+    "description": "Celebrating a legacy of service with local community heads, honoring student leaders and outstanding service partners.",
+    "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop",
+    "details": "The Annual Charter Day marked a historic milestone for the Lions Club of LEAD College. The event was graced by the District Governor and key administrative figures. Outstanding members were recognized with 'Lion of the Year' and 'Exemplary Leadership' awards. The evening concluded with cultural performances by members and a fundraising auction, raising resources for the club's upcoming winter service initiatives."
+  }
+]

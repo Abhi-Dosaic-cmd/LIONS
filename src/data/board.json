@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Ln. Sayanth P.K",
+    "designation": "President",
+    "image": "/C1.jpeg",
+    "phone": "+916238984914",
+    "phoneDisplay": "+91 62389 84914"
+  },
+  {
+    "id": "2",
+    "name": "Ln. Basil Eldho",
+    "designation": "Secretary",
+    "image": "/C2.jpeg",
+    "phone": "+919037229751",
+    "phoneDisplay": "+91 90372 29751"
+  },
+  {
+    "id": "3",
+    "name": "Ln. Gokul K.R",
+    "designation": "Treasurer",
+    "image": "/C3.jpeg",
+    "phone": "+919746933212",
+    "phoneDisplay": "+91 97469 33212"
+  }
+]
